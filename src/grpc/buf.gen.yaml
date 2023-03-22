@@ -1,0 +1,7 @@
+version: v1
+plugins:
+  - plugin: grpc-web
+    out: generated
+    opt:
+      - import_style=commonjs+dts
+      - mode=grpcwebtext
