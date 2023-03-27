@@ -1,4 +1,5 @@
 import { AppProps } from "next/app"
+import { Inter } from "next/font/google"
 import Head from "next/head"
 
 import { ERole } from "@config/constants"
@@ -16,6 +17,8 @@ const Meta = (
     <title>APT template</title>
   </Head>
 )
+
+const inter = Inter({ subsets: ["latin"] })
 
 function MyApp(
   props: AppProps & {

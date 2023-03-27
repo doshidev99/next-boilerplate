@@ -1,19 +1,14 @@
-import { Box } from "@chakra-ui/react"
-import React from "react"
+import { HStack } from "@chakra-ui/react"
 
-import WithSubnavigation from "src/components/Navbar"
-import SimpleSidebar from "src/components/Sidebar"
+import SidebarWithHeader from "src/components/Sidebar"
 
 const AuthGuard = (props: TChildren) => {
   return (
-    <div>
-      <SimpleSidebar>
-        <Box>
-          <WithSubnavigation />
-          {props.children}
-        </Box>
-      </SimpleSidebar>
-    </div>
+    <SidebarWithHeader>
+      <HStack bg={"#F7FAFC"} height="100%" justifyContent={"space-between"} p={6} borderRadius="16">
+        {props.children}
+      </HStack>
+    </SidebarWithHeader>
   )
 }
 export default AuthGuard

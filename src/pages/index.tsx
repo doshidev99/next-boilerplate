@@ -1,6 +1,8 @@
 import React from "react"
 
+import ECardWallet from "src/components/ECardWallet"
+
 const Index = () => {
-  return <div>home page</div>
+  return <ECardWallet />
 }
 export default Index
